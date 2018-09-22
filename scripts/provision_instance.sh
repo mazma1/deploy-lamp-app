@@ -28,7 +28,7 @@ provision_instance() {
 copy_deployment_script() {
   echo 'About to copy local deployment script to new instance...'
 
-  gcloud compute scp './deploy_app.sh' $PROJECT_NAME:/tmp/deploy_app.sh
+  gcloud compute scp './scripts/deploy_app.sh' $PROJECT_NAME:/tmp/deploy_app.sh
 
   gcloud compute ssh $PROJECT_NAME --zone europe-west3-b \
     --command "sudo mv /tmp/deploy_app.sh /home/deploy_app.sh"
