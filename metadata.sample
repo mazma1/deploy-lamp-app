@@ -1,0 +1,5 @@
+KEY                | VALUE
+-------------------|-----------------
+db_name            | wordpress_db
+db_password        | password
+sql_root_password	 | password
